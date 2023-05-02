@@ -1,0 +1,38 @@
+conditional statements:
+------------------------------------------------------------------------------
+
+- câu điều kiện if là loạt cơ bản nhất trong cấu trúc rẽ nhánh có điều kiên
+- cấu trúc:
+	if (codition){
+	   statement;	// sẽ được thực thi nếu điều kiện là true
+	}		// nếu điều kiện là false thì kết thúc
+
+hoặc 
+
+ 	if (condition){
+	   statement1;	// sẽ được thực thi khi điều kiện trả về là true
+	} else {
+	   statement2;	// sẽ thực thi khi điều kiện trả về là false
+	}
+
+
+- toán tử logic với câu điều kiện if:
+	- toán tử quan hệ: >  <  >=  <=  ==  !=  (lưu ý: không nên so sánh 
+			    trực tiếp 2 chấm động vì giữa các chấm động thường
+			    có lỗi làm tròn)
+	- toán tử logic: !  &&  || 
+	- toán tử trên bit: <<  >>  ~  &  |  ^  (được dùng nhiều trong quá khứ
+			    do nhu cầu tiết kiệm bộ nhớ, ngày nay thường dùng
+			    cho những chương tình big data, game lớn, lập trình 
+			    nhúng, ...)
+	- toán tử hỗn hợp: 
+		- sizeof operator: đế xác định kích thước của một kiểu dữ liệu trên máy tính cụ thể
+		- comma operator: các biểu thức đặt vào cách nhau bằng dấu phẩy, các biểu thức con lần lượt
+		 		được tính từ trái sang phải. Biểu thức mới nhận giá trị của biểu thức bên phải cùng.
+`		- coditional operator: toán tử điều kiện là toán tử 3 ngôi, tương đương với câu điều kiện
+				/*	if (condition)
+						expression1;
+					else 
+						expression2; 	*/
+				viết lại dưới dạng toán tử điều kiện là: 
+					(condition) ? expression2 : expression2;

@@ -1,0 +1,31 @@
+loop statement
+------------------------------------------------------------------------------
+- vòng lặp while: 
+	mệnh lệnh trong vòng lặp sẽ thực hiện nếu điều kiện vẫn còn đúng
+	while (dieu_kien){
+		cau_lenh;
+	}
+- vòng lặp for:
+	cho phép thực hiện lệnh lặp đi lặp lại trong một khoản cụ thể
+	for (bien; dieu_kien; tang_giam){
+		cau_lenh;
+	}
+
+-vòng lặp do...while:
+	cho phép hiện lệnh trước khi xét điều kiện
+	do{
+		cau_lenh;
+	} while (dieu_kien);
+- lồng vòng lặp: 
+	ngôn ngữ C++ cho phép sử dụng một vòng lặp trong một vòng lặp khác
+- các lệnh điều khiển trong vòng lặp: 
+	- break: kết thúc vòng lặp hoặc lệnh switch và chuyển sang thực thi vòng
+		lặp hoặc lệnh switch ngay sau đó
+	- continue: chương trình sẽ bỏ qua câu lệnh ở dưới nó (trong cùng 
+		một câu lệnh lặp) để thực hiện vòng lặp mới
+	- goto: chuyển tới lệnh được gán. Mặc dù vậy, nó được khuyên rằng không
+		 nên sử dụng goto trong chương trình
+- vòng lặp vô hạn trong c++:
+	- một vòng lặp vô hạn khi điều kiện không bao giờ false. Khi để 3 điều 
+	kiện trong vòng lặp for trống thì sẽ tạo ra một vòng lặp vô hạn
+	

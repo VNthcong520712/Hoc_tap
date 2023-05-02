@@ -1,0 +1,61 @@
+##### GETC(): nó đọc một kí tự đơn từ một luồng đầu vào nhất định và trả về giá trị số nguyên 
+      tương ứng (thường là giá trị ASCII cảu kí tự đó) khi thành công. Nó trả về EOF khi bị lỗi.
+***** cú pháp: int getc (FILE * stream);
+%%%%% example:
+              #include <stdio.h>
+              int main(){
+                 printf("%c", getc(stdin));
+                 return(0);
+              }
+@@@@@ kết quả: đầu vào: g (nhấn phím enter)
+               đầu ra: g
+!!!!! tìm hiểu thêm
+
+
+##### GETCHAR(): Sự khác biệt giữa getc () và getchar () là getc () có thể đọc từ bất kỳ luồng
+      đầu vào nào, nhưng getchar () đọc từ đầu vào chuẩn. Vì vậy getchar () tương đương với getc (stdin).
+***** cú pháp: int getchar(void);
+%%%%% example: 
+              #include <stdio.h>
+              int main(){
+                 printf("%c", getchar());
+                 return 0;
+              }
+@@@@@ kết quả: đầu vào: g (nhấn phím enter)
+               đẩu ra: g
+!!!!! tìm hiểu thêm
+
+
+
+##### GETCH(): getch() là một hàm không chuẩn và có trong tệp tiêu đề conio.h, phần lớn được sử dụng
+      bởi các trình biên dịch MS-DOS như Turbo C. Nó không phải là một phần của thư viện tiêu chuẩn
+      C hoặc ISO C, và nó cũng không được định nghĩa bởi POSIX. Giống như các hàm trên, nó cũng đọc
+      một kí tự từ bàn phím. Nhưng nó không sử dụng bất kỳ bộ đệm nào, vì vậy kid tự đã nhập ngay 
+      lập tức được trả về mà không cần đợi phím enter.
+***** cú pháp: int getch();
+%%%%% example: 
+              #include <stdio.h>
+              int main(){
+                 printf("%c", getch());
+                 return 0;
+              }
+@@@@@ kết quả: đầu vào: g (không có phím enter)
+               đầu ra: chương trình kết thúc ngay lập tức. Nhưng khi bạn sử dụng tình vỏ DOS trong Turbo C,
+                       nó sẽ hiển thị một g duy nhất, tức là 'g'
+!!!!! tìm hiểu thêm
+
+
+##### GETCHE(): giống như getch (), đây cũng là một hàm không chuẩn có trong conio.h. Nó đọc một ký 
+      tự từ bàn phím và hiển thị ngay lập tức trên màn hình đầu ra mà không cần đợi phím enter.
+***** cú pháp: int getche(void);
+%%%%% example: 
+              #include <stdio.h>
+              #include <conio.h>
+              int main(){
+                 printf("%c", getche());
+                 return 0;
+              }
+@@@@@ kết quả: đầu vào: g (không có phím enter vì nó không được đệm)
+               đầu ra: chương trình kết thúc ngay lập tức. Nhưng khi bạn sử dụng vỏ DOS trong Turbo C,
+                       gấp đôi g, tức là 'gg'
+!!!!! tìm hiểu thêm

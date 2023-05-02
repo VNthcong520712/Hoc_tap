@@ -1,0 +1,27 @@
+function:
+-------------------------------------------------------------------------------
+
+- định nghĩa hàm:
+	- mẫu chung:
+		Kieu_tra_ve Ten_ham(Danh_sach_tham_so){
+			thân hàm;
+		}
+		+ Kieu_tra_ve: chỉ định cho hàm biết kiểu dữ liệu trả về, hàm void 
+			cung cấp các hoạt động và không trả về bất cứ kiểu dữ liệu nào
+		+ Danh_sach_tham_so: khi hàm được gọi, cần truyền vào danh sách các
+			tham số, danh sách có các kieerum thứ tự và số lượng các tham
+			số của hàm. Các tham số của hàm được tùy chọn, nghĩa là một hàm
+			có thể không có tham số
+		+ thân hàm: bao gồm các câu lệnh cho hàm thực hiện
+- khai báo hàm trong C++:
+	- kiểu khai báo:
+		Kieu_du_lieu_tra_ve Ten_ham(danh sach tham so);
+	- Một khai báo hàm được yêu cầu khi bạn định nghĩa một hàm và mã nguồn và khi 
+	gọi một hàm từ một file nguồn khác. Trong trường hợp này, bạn nên khai báo hàm 
+	trước khi gọi hàm đó
+- gọi hàm:
+	- trong khi gọi hàm, bạn định nghĩa những gì hàm phải làm. 
+	- Khi một chương trình gọi một hàm, phần điều khiển được chuyển đến hàm được gọi. 
+	Một hàm được gọi thực hiện các nhiệm vụ được định nghĩa và trả về giá trị sau khi
+	thực hiện chương trình.
+

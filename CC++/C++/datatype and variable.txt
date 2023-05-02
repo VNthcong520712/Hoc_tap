@@ -1,0 +1,36 @@
+data type and variable:
+------------------------------------------------------------------------------
+
+- các kiểu dữ liệu cơ bản trong C++ 
+	boolean		 	bool
+	ký tự		 	char
+	số nguyên 	 	int
+	số thực			float 
+	số thực double		double
+	kiểu không giá trị 	void
+	kiểu wide character	wchar_t
+- một số kiểu cơ bản có thể được sửa đổi bởi sử dụng hoặc nhiều modifier này:
+	unsigned (kiểu không dấu)
+	signed (kiểu có dấu)
+	short
+	long
+- khai báo typedef cho phép người dùng sử dụng tên khác cho kiểu dữ liệu có sẵn:
+	typedef kieu_du_lieu ten_moi:
+- kiểu liệt kê enum khai báo một lần tên kiểu tùy ý và một tập hợp của 
+
+------------------------------------------------------------------------------
+
+- biến là các giá trị có thế thay đổi trong quá trình thực hiện chương trình
+- hằng là các giá trị không thay đổi trong suốt quá trình thực hiện chương trình
+	khai báo hằng cần gắn thêm từ khóa const
+	*lưu ý:
+		- khai báo hằng luôn cần gán cho nó một giá trị
+ 		- ta có thể sử dụng #define với chức năng tương tự
+		- dùng define hay const thì nên viết hoa các chữ cái và cách nhau bằng _
+
+- quy ước đặt tên:
+	- tên phải bắt đầu bằng chữ cái hoặc dấu gạch dưới
+	- không đặt tên trùng với từ khóa
+	- tên không chứa các toán tử
+	- hai bến cùng một hàm không được trùng tên
+	- tên không chưa dấu cách
